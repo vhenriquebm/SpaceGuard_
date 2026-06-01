@@ -1,0 +1,25 @@
+# Force LF line endings for all text files
+* text=auto eol=lf
+
+# Explicitly mark YAML files as text with LF
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# Java / Swift source files
+*.java text eol=lf
+*.swift text eol=lf
+
+# Config / build files
+*.xml text eol=lf
+*.properties text eol=lf
+*.md text eol=lf
+Dockerfile text eol=lf
+
+# Binary files — no conversion
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.jar binary
+*.class binary
