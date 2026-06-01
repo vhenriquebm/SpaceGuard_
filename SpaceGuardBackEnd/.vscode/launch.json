@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "SpaceGuard Backend",
+            "request": "launch",
+            "mainClass": "com.spaceguard.backend.SpaceGuardApplication",
+            "projectName": "backend"
+        }
+    ]
+}

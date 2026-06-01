@@ -1,0 +1,43 @@
+// SpaceGuard — Diagrama ER
+// Cole em: https://dbdiagram.io
+
+Table users {
+  id            bigint       [pk, increment]
+  email         varchar(255) [not null, unique]
+  password_hash varchar(255) [not null]
+  created_at    timestamp    [default: `NOW()`]
+}
+
+Table regions {
+  id         bigint       [pk, increment]
+  name       varchar(255) [not null]
+  country    varchar(255) [not null]
+  risk_level varchar(50)  [not null, note: 'LOW | MEDIUM | HIGH | CRITICAL']
+}
+
+Table sensors {
+  id        bigint       [pk, increment]
+  name      varchar(255) [not null]
+  type      varchar(50)  [not null, note: 'TEMPERATURE | SMOKE | WATER | HUMIDITY | MULTI']
+  status    varchar(50)  [not null, note: 'ACTIVE | INACTIVE | MAINTENANCE']
+  region_id bigint       [not null, ref: > regions.id]
+}
+
+Table sensor_readings {
+  id          bigint    [pk, increment]
+  temperature float
+  smoke_level float
+  water_level float
+  recorded_at timestamp [default: `NOW()`]
+  sensor_id   bigint    [not null, ref: > sensors.id]
+}
+
+Table environmental_alerts {
+  id          bigint       [pk, increment]
+  title       varchar(255) [not null]
+  description text
+  risk_level  varchar(50)  [not null, note: 'LOW | MEDIUM | HIGH | CRITICAL']
+  alert_type  varchar(50)  [not null, note: 'FIRE | FLOOD | SMOKE | CRITICAL_EVENT']
+  created_at  timestamp    [default: `NOW()`]
+  region_id   bigint       [not null, ref: > regions.id]
+}

@@ -1,0 +1,10 @@
+package com.spaceguard.backend.repository;
+
+import com.spaceguard.backend.entity.SensorReading;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.List;
+
+public interface SensorReadingRepository extends JpaRepository<SensorReading, Long> {
+    List<SensorReading> findBySensorIdOrderByRecordedAtDesc(Long sensorId);
+}

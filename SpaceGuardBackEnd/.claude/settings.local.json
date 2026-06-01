@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mvn spring-boot:run)",
+      "Bash(curl -s -X POST http://localhost:8080/auth/login -H 'Content-Type: application/json' -d '{\"email\":\"admin@spaceguard.com\",\"password\":\"admin123\"}')",
+      "Bash(python3 -m json.tool)",
+      "Bash(psql -U spaceguard -d spaceguard -c \"SELECT id, email, created_at FROM users;\")",
+      "Bash(psql -U spaceguard -d spaceguard -c \"SELECT id, name, country, risk_level FROM regions;\")",
+      "Bash(psql -U spaceguard -d spaceguard -c \"SELECT id, title, alert_type, risk_level FROM environmental_alerts;\")",
+      "Bash(psql -U spaceguard -d spaceguard -c \"\\\\d+ users\")",
+      "Bash(psql -U spaceguard -d spaceguard -c \"\\\\d+ regions\")",
+      "Bash(psql -U spaceguard -d spaceguard -c \"\\\\d+ sensors\")",
+      "Bash(psql -U spaceguard -d spaceguard -c \"\\\\d+ sensor_readings\")",
+      "Bash(psql -U spaceguard -d spaceguard -c \"\\\\d+ environmental_alerts\")",
+      "Bash(psql -U spaceguard -d spaceguard -c \"\\\\d environmental_alerts\")",
+      "Bash(psql -U spaceguard -d spaceguard -c \"\\\\d sensor_readings\")",
+      "Bash(psql -U spaceguard -d spaceguard -f /Users/vitorhenriquebarreiromarinho/Desktop/SpaceGuardBackEnd/docs/spaceguard_schema.sql)",
+      "Bash(curl -s -X POST http://localhost:8080/auth/login -H 'Content-Type: application/json' -d '{\"email\":\"teste@spaceguard.com\",\"password\":\"teste123\"}')",
+      "Bash(python3 -c ' *)"
+    ]
+  }
+}
