@@ -478,32 +478,42 @@ O SpaceGuard está alinhado com os Objetivos de Desenvolvimento Sustentável da 
 
 ## 📸 Screenshots
 
-> *As imagens abaixo serão adicionadas após execução em simulador/dispositivo real.*
+> *Capturas reais do app em execução no iPhone 17 Pro Simulator.*
 
-### Login
-| Tela de Login |
-|---|
-| `[ screenshot Login ]` |
+<div align="center">
 
-### Dashboard de Alertas
-| Dashboard — Lista de Alertas |
-|---|
-| `[ screenshot Dashboard ]` |
+<table>
+  <tr>
+    <td align="center">
+      <img src="img/Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202026-06-05%20at%2018.34.07.png" width="260" /><br/>
+      <sub><b>Tela 1</b></sub>
+    </td>
+    <td align="center">
+      <img src="img/Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202026-06-05%20at%2018.34.30.png" width="260" /><br/>
+      <sub><b>Tela 2</b></sub>
+    </td>
+    <td align="center">
+      <img src="img/Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202026-06-05%20at%2018.34.44.png" width="260" /><br/>
+      <sub><b>Tela 3</b></sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="img/Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202026-06-05%20at%2018.34.48.png" width="260" /><br/>
+      <sub><b>Tela 4</b></sub>
+    </td>
+    <td align="center">
+      <img src="img/Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202026-06-05%20at%2018.34.58.png" width="260" /><br/>
+      <sub><b>Tela 5</b></sub>
+    </td>
+    <td align="center">
+      <img src="img/Simulator%20Screenshot%20-%20iPhone%2017%20Pro%20-%202026-06-05%20at%2018.35.03.png" width="260" /><br/>
+      <sub><b>Tela 6</b></sub>
+    </td>
+  </tr>
+</table>
 
-### Detalhe do Alerta
-| Detalhe + Nível de Risco |
-|---|
-| `[ screenshot AlertDetail ]` |
-
-### Simulação de Sensor
-| Painel de Simulação IoT |
-|---|
-| `[ screenshot SensorSimulation ]` |
-
-### Swagger UI
-| Documentação Interativa |
-|---|
-| `[ screenshot Swagger ]` |
+</div>
 
 ---
 
